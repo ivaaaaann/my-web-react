@@ -1,4 +1,7 @@
 import "./Navigation.css";
+import ContentContainer from "./ContentContainer";
+import { Link } from "react-router-dom";
+import { Component } from "react";
 
 function Navigation() {
   return (
@@ -12,10 +15,8 @@ function Navigation() {
           />
         </div>
         <div className="nav-item-container">
-          <div className="nav-item font-style">포트폴리오</div>
-          <div className="nav-item font-style">포트폴리오</div>
-          <div className="nav-item font-style">포트폴리오</div>
-          <div className="nav-item font-style">포트폴리오</div>
+          <div className="nav-item font-style">프로젝트</div>
+          <div className="nav-item font-style">소개</div>
         </div>
       </div>
     </section>

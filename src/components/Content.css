@@ -1,0 +1,50 @@
+.content {
+  width: 35%;
+  height: 200px;
+  margin: 20px auto;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25),
+    0 1px 3px -1px rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--main_color);
+  cursor: pointer;
+  display: flex;
+}
+
+.content:hover {
+  background-color: var(--main_color);
+  color: white;
+  transition: 1s;
+}
+
+.content-img {
+  width: 40%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+
+.content-img img {
+  width: 90%;
+  height: 90%;
+  border-radius: 5px;
+}
+
+.content-data {
+  width: 60%;
+  height: 100%;
+}
+
+.content-data-title {
+  font-size: 25px;
+}
+
+.content-data-year,
+.content-data-explain {
+  font-weight: 300;
+}
+
+.content-data-explain {
+  font-size: 15px;
+  margin-top: 5px;
+}

@@ -1,0 +1,22 @@
+#contents {
+  height: auto;
+}
+
+.content-title-container {
+  align-items: center;
+  display: flex;
+}
+.content-title {
+  font-size: 40px;
+  margin: 20px;
+  color: var(--main_color);
+  margin: 10px auto;
+}
+
+.content-container {
+  width: 85%;
+  height: auto;
+  flex-wrap: wrap;
+  display: flex;
+  margin: 0px auto;
+}
