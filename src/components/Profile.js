@@ -1,4 +1,5 @@
 import "./Profile.css";
+import ProfileImg from "../img/profile.jpg";
 
 function MyLangContents({ Lang, img }) {
   return (
@@ -51,7 +52,9 @@ function Profile() {
         <div className="profile-data-container">
           <div className="profile-title font-style">내정보</div>
           <div className="profile-privacy-data-wrap">
-            <div className="profile-privacy-img"></div>
+            <div className="profile-privacy-img">
+              <img src={ProfileImg} title="프로필" alt="프로필" />
+            </div>
             <div className="profile-privact-data font-style">
               <h5>이름 : 임동현</h5>
               <h5>나이 : 17</h5>

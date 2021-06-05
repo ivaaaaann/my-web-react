@@ -32,6 +32,12 @@
     0 1px 3px -1px rgba(0, 0, 0, 0.3);
 }
 
+.profile-privacy-img img {
+  width: 250px;
+  height: 250px;
+  border-radius: 1000px;
+}
+
 .profile-privacy-img:hover {
   background-color: var(--main_color);
   opacity: 0.3;
@@ -86,4 +92,5 @@
   align-items: center;
   text-align: center;
   font-weight: 300;
+  margin: auto 0px;
 }
