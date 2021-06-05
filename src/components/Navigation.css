@@ -10,6 +10,7 @@
   margin: 0 auto;
   left: 0;
   right: 0;
+  z-index: 2;
 }
 .nav-logo-img {
   margin: 30px;
