@@ -4,6 +4,7 @@ import Navigation from "./components/Navigation";
 import Title from "./components/Title";
 import ContentContainer from "./components/ContentContainer";
 import Profile from "./components/Profile";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Route path="/" exact={true} component={Title} />
       <Route path="/" exact={true} component={Profile} />
       <Route path="/" exact={true} component={ContentContainer} />
+      <Route path="/" exact={true} component={Footer} />
     </HashRouter>
   );
 }

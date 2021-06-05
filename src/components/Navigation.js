@@ -1,7 +1,4 @@
 import "./Navigation.css";
-import ContentContainer from "./ContentContainer";
-import { Link } from "react-router-dom";
-import { Component } from "react";
 
 function Navigation() {
   return (
