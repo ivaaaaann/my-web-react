@@ -29,7 +29,7 @@ const MyProjectList = [
   },
   {
     id: 4,
-    name: "toDoList",
+    name: "ToDoList",
     year: "2021",
     complete: "미완료",
     explain:
