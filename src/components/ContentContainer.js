@@ -1,5 +1,9 @@
 import "./ContentContainer.css";
 import Content from "./Content";
+import HyunieHompageImg from "../img/hyunie-homepage.png";
+import PTPOProjectImg from "../img/PTPO_project.png";
+import MovieAppImg from "../img/Movie_app.png";
+import ToDoListImg from "../img/Todolist.png";
 
 const MyProjectList = [
   {
@@ -8,7 +12,7 @@ const MyProjectList = [
     year: "2020",
     complete: "완료",
     explain: "구글의 Teachable Machine 툴을 이용하여 만든 AI 웹서비스 입니다.",
-    img: "/static/media/hyunie-homepage.08f1fc33.png",
+    img: HyunieHompageImg,
   },
   {
     id: 2,
@@ -16,7 +20,7 @@ const MyProjectList = [
     year: "2021",
     complete: "진행중",
     explain: "단디 프로젝트에서 기획된 포트폴리오 관리 웹서비스 입니다.",
-    img: "/static/media/PTPO_project.8efccff5.png",
+    img: PTPOProjectImg,
   },
   {
     id: 3,
@@ -25,7 +29,7 @@ const MyProjectList = [
     complete: "완료",
     explain:
       "노마드 코더의 ReactJS로 영화 웹 서비스 만들기를 보고 만든 영화 웹서비스 입니다.",
-    img: "/static/media/Movie_app.682e7ce8.png",
+    img: MovieAppImg,
   },
   {
     id: 4,
@@ -34,7 +38,7 @@ const MyProjectList = [
     complete: "미완료",
     explain:
       "노마드 코더의 바닐라 JS로 크롬 앱 만들기를 보고 만든 TodoList 웹서비스 입니다.",
-    img: "/static/media/Todolist.ffbb42e1.png",
+    img: ToDoListImg,
   },
 ];
 

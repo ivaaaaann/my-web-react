@@ -16,12 +16,12 @@ const MyLanguage = [
   {
     id: 1,
     Lang: "Python",
-    img: "https://o.remove.bg/downloads/7ff0ab4a-9a13-4468-bb66-6e09988f2687/image-removebg-preview.png",
+    img: "https://o.remove.bg/downloads/e676c0c3-5e8b-421e-be03-718e255fde4b/image-removebg-preview.png",
   },
   {
     id: 2,
     Lang: "C",
-    img: "https://o.remove.bg/downloads/500777d4-7dc2-4517-a135-8b76d04e34d6/image-removebg-preview.png",
+    img: "https://o.remove.bg/downloads/d36153a5-a07e-4aee-a0b7-9f2cbd6c9d45/image-removebg-preview.png",
   },
   {
     id: 3,
@@ -31,17 +31,17 @@ const MyLanguage = [
   {
     id: 4,
     Lang: "Html&CSS",
-    img: "https://o.remove.bg/downloads/bedb1f0e-ed26-4f8b-9640-455a845aa1b8/image-removebg-preview.png",
+    img: "https://o.remove.bg/downloads/11f3c0f9-0b26-45cf-8de8-182a20bc9e78/image-removebg-preview.png",
   },
   {
     id: 5,
     Lang: "Jquery",
-    img: "https://o.remove.bg/downloads/4f20e6a7-7f90-445f-8b10-fecf165405e0/image-removebg-preview.png",
+    img: "https://o.remove.bg/downloads/f0706a8b-0ecf-4667-b077-871b2b989a11/image-removebg-preview.png",
   },
   {
     id: 6,
     Lang: "React",
-    img: "https://o.remove.bg/downloads/7b9b5a45-53bc-49ec-b423-85206c93a3e8/image-removebg-preview.png",
+    img: "https://o.remove.bg/downloads/018cbcdb-5885-409d-bd63-60f0e41017df/image-removebg-preview.png",
   },
 ];
 
