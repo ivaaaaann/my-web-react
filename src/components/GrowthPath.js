@@ -43,7 +43,11 @@ function GrowthPath() {
         <div className="growthpath-title font-style">로드맵</div>
         <div className="growthpath-item-wrap">
           {GrowthPathData.map((data) => (
-            <GrowthPathItem img={data.img} explain={data.explain} />
+            <GrowthPathItem
+              img={data.img}
+              explain={data.explain}
+              key={data.id}
+            />
           ))}
         </div>
       </div>
