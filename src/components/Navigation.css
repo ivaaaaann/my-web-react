@@ -11,6 +11,11 @@
   left: 0;
   right: 0;
   z-index: 2;
+  transition: 0.5s;
+}
+.nav-after {
+  background: var(--main_color);
+  transition: 0.5s;
 }
 .nav-logo-img {
   margin: 30px;
