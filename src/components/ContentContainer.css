@@ -29,12 +29,36 @@
   cursor: pointer;
   margin: 0px 10px;
   outline: none;
-  background: var(--sub_color);
+  background: var(--main_color);
 }
 
 .content-classification-button:active {
   transition: 0.5s;
   background: none;
+}
+
+.content-classification-button-on {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid var(--main_color);
+  cursor: pointer;
+  margin: 0px 10px;
+  outline: none;
+  transition: 0.5s;
+  background: var(--sub_color);
+}
+
+.content-classification-button-off {
+  width: 150px;
+  height: 50px;
+  border-radius: 50px;
+  border: 3px solid var(--main_color);
+  cursor: pointer;
+  margin: 0px 10px;
+  outline: none;
+  transition: 0.5s;
+  background: var(--main_color);
 }
 
 .content-classification-button-text {

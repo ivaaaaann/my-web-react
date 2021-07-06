@@ -65,6 +65,14 @@ const ContentContainer = () => {
 
   const { currentItem, changeItem } = useTabs(0, tabs);
 
+  const [btnState, setBtnState] = useState(0);
+
+  const onClickButton = (index) => {
+    changeItem(index);
+    setBtnState(index);
+    console.log(btnState);
+  };
+
   return (
     <section id="contents">
       <div className="content-title-container">
@@ -73,8 +81,11 @@ const ContentContainer = () => {
       <div className="content-button-wrap">
         {tabs.map((section, index) => (
           <button
-            className="content-classification-button"
-            onClick={() => changeItem(index)}
+            className={
+              "content-classification-button-" +
+              (btnState === index ? "on" : "off")
+            }
+            onClick={() => onClickButton(index)}
           >
             <div className="content-classification-button-text font-style">
               {section.tab}
