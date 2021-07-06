@@ -5,6 +5,7 @@ import HyunieHompageImg from "../img/hyunie-homepage.png";
 import PTPOProjectImg from "../img/PTPO_project.png";
 import MovieAppImg from "../img/Movie_app.png";
 import ToDoListImg from "../img/Todolist.png";
+import HooksImg from "../img/10KindHooksImg.png";
 
 const tabs = [
   {
@@ -36,6 +37,15 @@ const tabs = [
         explain:
           "노마드 코더의 바닐라 JS로 크롬 앱 만들기를 보고 만든 TodoList 웹서비스 입니다.",
         img: ToDoListImg,
+      },
+      {
+        id: 4,
+        name: "10 Kind hooks",
+        year: "2021",
+        complete: "미완료",
+        explain:
+          "노마드 코더의 실전형 리액트 Hooks 10개를 보고 만든 hook 모음 웹서비스 입니다.",
+        img: HooksImg,
       },
     ],
   },
