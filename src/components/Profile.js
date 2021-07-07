@@ -70,7 +70,7 @@ function Profile() {
           </div>
         </div>
         <div className="profile-data-container">
-          <div className="profile-title font-style">언어</div>
+          <div className="profile-title font-style">스택</div>
           <div className="profile-data-data">
             {MyLanguage.map((data) => (
               <MyLangContents key={data.id} Lang={data.Lang} img={data.img} />
