@@ -42,7 +42,7 @@ const tabs = [
         id: 4,
         name: "10 Kind hooks",
         year: "2021",
-        complete: "미완료",
+        complete: "완료",
         explain:
           "노마드 코더의 실전형 리액트 Hooks 10개를 보고 만든 hook 모음 웹서비스 입니다.",
         img: HooksImg,
