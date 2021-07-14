@@ -6,6 +6,7 @@ import PTPOProjectImg from "../img/PTPO_project.png";
 import MovieAppImg from "../img/Movie_app.png";
 import ToDoListImg from "../img/Todolist.png";
 import HooksImg from "../img/10KindHooksImg.png";
+import 맛있소고Img from "../img/맛있소고.png";
 
 const tabs = [
   {
@@ -59,6 +60,24 @@ const tabs = [
         complete: "진행중",
         explain: "단디 프로젝트에서 기획된 포트폴리오 관리 웹서비스 입니다.",
         img: PTPOProjectImg,
+      },
+      {
+        id: 2,
+        name: "OPSO 프로젝트",
+        year: "2021",
+        complete: "진행중",
+        explain:
+          "바인드 6기 인턴 프로젝트에서 기획된 대소고 오픈소스 웹 서비스 입니다.",
+        img: PTPOProjectImg,
+      },
+      {
+        id: 3,
+        name: "맛있소고 프로젝트",
+        year: "2021",
+        complete: "완료",
+        explain:
+          "2021학년도 1학기 대소고 해커톤에서 기획된 대소고 맛집 추천 플랫폼입니다.",
+        img: 맛있소고Img,
       },
     ],
   },
