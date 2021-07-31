@@ -68,7 +68,7 @@ const tabs = [
         complete: "진행중",
         explain:
           "바인드 6기 인턴 프로젝트에서 기획된 대소고 오픈소스 웹 서비스 입니다.",
-        img: PTPOProjectImg,
+        img: "",
       },
       {
         id: 3,

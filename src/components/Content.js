@@ -4,7 +4,11 @@ function Content({ img, name, year, complete, explain }) {
   return (
     <div className="content">
       <div className="content-img">
-        <img src={img} title={name} alt={name} />
+        {img !== "" ? (
+          <img src={img} title={name} alt={name} />
+        ) : (
+          <img src="" title={name} alt="사진이 없습니다." />
+        )}
       </div>
       <div className="content-data">
         <div className="content-data-title font-style">
