@@ -7,6 +7,7 @@ import MovieAppImg from "../img/Movie_app.png";
 import ToDoListImg from "../img/Todolist.png";
 import HooksImg from "../img/10KindHooksImg.png";
 import 맛있소고Img from "../img/맛있소고.png";
+import TweeterCloneImg from "../img/TweeterClone.png";
 
 const tabs = [
   {
@@ -47,6 +48,14 @@ const tabs = [
         explain:
           "노마드 코더의 실전형 리액트 Hooks 10개를 보고 만든 hook 모음 웹서비스 입니다.",
         img: HooksImg,
+      },
+      {
+        id: 5,
+        name: "Tweeter Clone Coding",
+        year: "2021",
+        complete: "완료",
+        explain: "노마드 코더의 트위터 를론 코딩을 보고 만든 웹서비스 입니다.",
+        img: TweeterCloneImg,
       },
     ],
   },
