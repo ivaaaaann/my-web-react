@@ -1,21 +1,41 @@
-#profile {
-  height: auto;
-  margin: 60px 0px;
-}
-
 .profile-container {
-  width: 80%;
+  width: 100%;
+  min-height: 100vh;
   height: auto;
   background-color: white;
-  margin: 20px auto;
-  flex-wrap: wrap;
   display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#profile-dataWrap {
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 20px;
+  overflow: hidden;
+}
+
+.ProfileOn {
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
 }
 
 .profile-data-container {
   width: 580px;
   height: auto;
-  margin: 5px auto;
 }
 
 .profile-title {
@@ -59,38 +79,4 @@
   height: auto;
   flex-wrap: wrap;
   display: flex;
-}
-
-.profile-data-content {
-  width: 40%;
-  height: 142px;
-  border: 1px solid var(--main_color);
-  border-radius: 5px;
-  box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25),
-    0 1px 3px -1px rgba(0, 0, 0, 0.3);
-  margin: 5px 0px;
-  margin-right: auto;
-}
-
-.profile-data-content:hover {
-  background-color: var(--main_color);
-  transition: 1s;
-  width: 250px;
-  height: 160px;
-  font-size: 20px;
-}
-
-.profile-data-content-img img {
-  width: 116px;
-  height: 116px;
-  margin: 0px auto;
-  margin-top: 2px;
-  display: flex;
-}
-
-.profile-data-title {
-  align-items: center;
-  text-align: center;
-  font-weight: 300;
-  margin: auto 0px;
 }

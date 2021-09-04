@@ -1,22 +1,14 @@
 import "./Profile.css";
-import ProfileImg from "../asset/img/profile.jpg";
-import PythonImg from "../asset/img/Python.png";
-import ReactImg from "../asset/img/React.png";
-import JavascriptImg from "../asset/img/Javascript.png";
-import JqueryImg from "../asset/img/Jquery.png";
-import HtmlCssImg from "../asset/img/Html&css.png";
-import CImg from "../asset/img/C.png";
-
-const MyLangContents = ({ Lang, img }) => {
-  return (
-    <div className="profile-data-content">
-      <div className="profile-data-content-img">
-        <img src={img} title={Lang} alt={Lang} />
-      </div>
-      <div className="profile-data-title">{Lang}</div>
-    </div>
-  );
-}
+import ProfileImg from "../../asset/img/profile.jpg";
+import PythonImg from "../../asset/img/Python.png";
+import ReactImg from "../../asset/img/React.png";
+import JavascriptImg from "../../asset/img/Javascript.png";
+import JqueryImg from "../../asset/img/Jquery.png";
+import HtmlCssImg from "../../asset/img/Html&css.png";
+import CImg from "../../asset/img/C.png";
+import ReduxImg from "../../asset/img/Redux.png";
+import MyLangContents from "./MyLangContent";
+import { useEffect, useRef, useState } from "react";
 
 const MyLanguage = [
   {
@@ -49,12 +41,38 @@ const MyLanguage = [
     Lang: "React",
     img: ReactImg,
   },
+  {
+    id: 7,
+    Lang: "Redux",
+    img: ReduxImg,
+  },
 ];
 
-const Profile = () =>{
+const Profile = () => {
+  const [isPlace, setIsPlace] = useState(false);
+
+  const profileId = useRef();
+
+  const hanldeIsPlace = () => {
+    //console.log(`change: ${window.scrollY}`);
+    if (window.scrollY >= parseInt(969)) {
+      setIsPlace(true);
+    } else {
+      setIsPlace(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", hanldeIsPlace);
+    return () => {
+      window.removeEventListener("scroll", hanldeIsPlace);
+    };
+  }, []);
+
   return (
-    <section id="profile">
-      <div className="profile-container">
+    <div className="profile-container" ref={profileId}>
+      {/* {isPlace ? ( */}
+      <div id="profile-dataWrap" className={isPlace ? "ProfileOn" : ""}>
         <div className="profile-data-container">
           <div className="profile-title font-style">내정보</div>
           <div className="profile-privacy-data-wrap">
@@ -78,8 +96,9 @@ const Profile = () =>{
           </div>
         </div>
       </div>
-    </section>
+      {/* ) : null} */}
+    </div>
   );
-}
+};
 
 export default Profile;

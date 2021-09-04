@@ -1,0 +1,33 @@
+.profile-data-content {
+  width: 30%;
+  height: 142px;
+  border: 1px solid var(--main_color);
+  border-radius: 5px;
+  box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25),
+    0 1px 3px -1px rgba(0, 0, 0, 0.3);
+  margin: 5px 0px;
+  margin-right: auto;
+}
+
+.profile-data-content:hover {
+  background-color: var(--main_color);
+  transition: 1s;
+  width: 35%;
+  height: 160px;
+  font-size: 20px;
+}
+
+.profile-data-content-img img {
+  width: 116px;
+  height: 116px;
+  margin: 0px auto;
+  margin-top: 2px;
+  display: flex;
+}
+
+.profile-data-title {
+  align-items: center;
+  text-align: center;
+  font-weight: 300;
+  margin: auto 0px;
+}
