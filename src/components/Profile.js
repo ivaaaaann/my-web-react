@@ -1,13 +1,13 @@
 import "./Profile.css";
-import ProfileImg from "../img/profile.jpg";
-import PythonImg from "../img/Python.png";
-import ReactImg from "../img/React.png";
-import JavascriptImg from "../img/Javascript.png";
-import JqueryImg from "../img/Jquery.png";
-import HtmlCssImg from "../img/Html&css.png";
-import CImg from "../img/C.png";
+import ProfileImg from "../asset/img/profile.jpg";
+import PythonImg from "../asset/img/Python.png";
+import ReactImg from "../asset/img/React.png";
+import JavascriptImg from "../asset/img/Javascript.png";
+import JqueryImg from "../asset/img/Jquery.png";
+import HtmlCssImg from "../asset/img/Html&css.png";
+import CImg from "../asset/img/C.png";
 
-function MyLangContents({ Lang, img }) {
+const MyLangContents = ({ Lang, img }) => {
   return (
     <div className="profile-data-content">
       <div className="profile-data-content-img">
@@ -51,7 +51,7 @@ const MyLanguage = [
   },
 ];
 
-function Profile() {
+const Profile = () =>{
   return (
     <section id="profile">
       <div className="profile-container">

@@ -1,6 +1,6 @@
 import "./Content.css";
 
-function Content({ img, name, year, complete, explain }) {
+const Content = ({ img, name, year, complete, explain }) => {
   return (
     <div className="content">
       <div className="content-img">

@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./ContentContainer.css";
 import Content from "./Content";
-import HyunieHompageImg from "../img/hyunie-homepage.png";
-import PTPOProjectImg from "../img/PTPO_project.png";
-import MovieAppImg from "../img/Movie_app.png";
-import ToDoListImg from "../img/Todolist.png";
-import HooksImg from "../img/10KindHooksImg.png";
-import 맛있소고Img from "../img/맛있소고.png";
-import TweeterCloneImg from "../img/TweeterClone.png";
+import HyunieHompageImg from "../asset/img/hyunie-homepage.png";
+import PTPOProjectImg from "../asset/img/PTPO_project.png";
+import MovieAppImg from "../asset/img/Movie_app.png";
+import ToDoListImg from "../asset/img/Todolist.png";
+import HooksImg from "../asset/img/10KindHooksImg.png";
+import 맛있소고Img from "../asset/img/맛있소고.png";
+import TweeterCloneImg from "../asset/img/TweeterClone.png";
 
 const tabs = [
   {

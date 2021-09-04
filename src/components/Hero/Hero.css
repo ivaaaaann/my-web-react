@@ -1,0 +1,54 @@
+.hero-container {
+  width: 100%;
+  height: 100vh;
+  background-color: var(--main_color);
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+}
+.hero-text-wrap {
+  text-align: center;
+  display: flex;
+  flex-direction: column; 
+}
+
+@keyframes fadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+  to{
+    transform: translate3d(0,0,0);
+    opacity: 1;
+  }
+}
+
+#hero-img{
+  width: 120px;
+  margin: 0px auto;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.hero-main-text {
+  font-size: 75px;
+  font-weight: 300;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.hero-sub-text {
+  font-size: 25px;
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  animation-name: fadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}

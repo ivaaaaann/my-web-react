@@ -1,6 +1,6 @@
 import "./Footer.css";
 
-function Footer() {
+const Footer = ()=> {
   return (
     <section id="footer">
       <div className="footer-container">

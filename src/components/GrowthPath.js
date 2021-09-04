@@ -36,7 +36,7 @@ function GrowthPathItem({ img, explain }) {
   );
 }
 
-function GrowthPath() {
+const GrowthPath = () => {
   return (
     <section id="growthpath">
       <div className="growthpath-container">

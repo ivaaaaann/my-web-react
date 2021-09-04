@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import "./Navigation.css";
-import NavMenuImg from "../img/NavMenu.svg";
+import NavMenuImg from "../asset/img/NavMenu.svg";
 
 class Navigation extends Component {
   constructor() {
