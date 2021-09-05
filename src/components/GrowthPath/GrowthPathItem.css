@@ -8,11 +8,6 @@
   position: relative;
 }
 
-.growthpath-item-container:hover {
-  transition: 1s;
-  top: -20px;
-}
-
 .growthpath-item {
   width: 100%;
   height: 100%;
@@ -22,6 +17,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
+  border-radius: 5px;
   z-index: 2;
 }
 .growthpath-item img {
@@ -29,20 +25,48 @@
 }
 
 .growthpath-item-explain {
-  font-size: 15px;
-  font-weight: 300;
-  width: 200px;
-  margin: 10px auto;
+  width: 100%;
+  height: 100%;
+  border-radius: 5px;
+  background-color: var(--main-background-color);
+  border: 1px solid white;
+  left: 0px;
+  top: 0px;
   position: absolute;
   z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+
+.growthpath-item-explain-textWrap {
+  width: 380px;
+  height: 180px;
+  margin: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.growthpath-item-explain-text {
+  font-size: 20px;
+  font-weight: 300;
+  margin: 0px;
+}
+
 .growthpath-btn {
   position: absolute;
   right: 0px;
   bottom: 0px;
-  width: 82px;
-  height: 66px;
+  width: 100%;
+  height: 100%;
+  background: none;
+  border: 0px;
+  outline: none;
   z-index: 2;
+  cursor: pointer;
+  padding: 0px;
+  border-radius: 5px;
 }
 
 .isOn {

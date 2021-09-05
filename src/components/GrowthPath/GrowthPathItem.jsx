@@ -11,10 +11,12 @@ const GrowthPathItem = ({ img, explain }) => {
       <div className={`growthpath-item ${isClick ? "isOn" : ""}`}>
         <img src={img} title="로드맵" alt="로드맵" />
       </div>
-      <div className="growthpath-item-explain">{explain}</div>
-      <button className="growthpath-btn" onClick={onClickToggle}>
-        {isClick ? "접기" : "보기"}
-      </button>
+      <div className="growthpath-item-explain">
+        <div className="growthpath-item-explain-textWrap">
+          <p className="growthpath-item-explain-text">{explain}</p>
+        </div>
+      </div>
+      <button className="growthpath-btn" onClick={onClickToggle} />
     </div>
   );
 };
