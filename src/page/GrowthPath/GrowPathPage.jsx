@@ -2,7 +2,7 @@ import GrowthPath from "../../components/GrowthPath/GrowthPath";
 
 const GrowPathPage = () => {
   return (
-    <section id="growPath">
+    <section id="growthPath">
       <GrowthPath />
     </section>
   );

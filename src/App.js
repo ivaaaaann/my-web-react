@@ -17,9 +17,9 @@ const App = () => {
           <Navigation />
           <LoadingTitle />
           <HeroPage />
+          <GrowPathPage />
           <ProfilePage />
           <ProjectPage />
-          <GrowPathPage />
           <Footer />
         </Route>
       </Switch>

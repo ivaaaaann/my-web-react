@@ -1,5 +1,6 @@
 #project-container {
-  height: 100vh;
+  min-height: 100vh;
+  height: auto;
   background-color: var(--main_color);
 }
 

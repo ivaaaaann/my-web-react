@@ -55,7 +55,7 @@ const Profile = () => {
 
   const hanldeIsPlace = () => {
     //console.log(`change: ${window.scrollY}`);
-    if (window.scrollY >= parseInt(569)) {
+    if (window.scrollY >= parseInt(1555)) {
       setIsPlace(true);
     } else {
       setIsPlace(false);

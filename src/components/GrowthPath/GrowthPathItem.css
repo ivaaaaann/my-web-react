@@ -1,0 +1,50 @@
+.growthpath-item-container {
+  width: 580px;
+  height: 300px;
+  border: 1px solid var(--main-border-color);
+  box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25),
+    0 1px 3px -1px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  position: relative;
+}
+
+.growthpath-item-container:hover {
+  transition: 1s;
+  top: -20px;
+}
+
+.growthpath-item {
+  width: 100%;
+  height: 100%;
+  border: 1px solid var(--main_color);
+  background-color: var(--main_color);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  z-index: 2;
+}
+.growthpath-item img {
+  width: 100px;
+}
+
+.growthpath-item-explain {
+  font-size: 15px;
+  font-weight: 300;
+  width: 200px;
+  margin: 10px auto;
+  position: absolute;
+  z-index: 1;
+}
+.growthpath-btn {
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+  width: 82px;
+  height: 66px;
+  z-index: 2;
+}
+
+.isOn {
+  z-index: 0;
+}
