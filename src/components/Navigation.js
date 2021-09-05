@@ -1,11 +1,28 @@
-import React, { Component } from "react";
+import React, { Component, useEffect, useState } from "react";
 import "./Navigation.css";
 import NavMenuImg from "../asset/img/NavMenu.svg";
 
 const Navigation = () => {
+  const [isScroll, setIsScroll] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY !== 0) {
+      setIsScroll(true);
+    } else {
+      setIsScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <section id="navigation">
-      <div className="navigation-container">
+      <div className={`navigation-container ${isScroll ? "navOn" : ""}`}>
         <div className="nav-logo-img">
           <img
             src="https://image.flaticon.com/icons/png/128/639/639394.png"

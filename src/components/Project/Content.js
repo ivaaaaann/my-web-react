@@ -19,6 +19,6 @@ const Content = ({ img, name, year, complete, explain }) => {
       </div>
     </div>
   );
-}
+};
 
 export default Content;

@@ -1,27 +1,26 @@
-#contents {
-  height: auto;
-  padding-bottom: 70px;
+#project-container {
+  height: 100vh;
   background-color: var(--main_color);
 }
 
-.content-title-container {
+.project-title-container {
   align-items: center;
   display: flex;
 }
-.content-title {
+.project-title {
   font-size: 40px;
   margin: 20px;
   color: white;
   margin: 10px auto;
 }
 
-.content-button-wrap {
+.project-button-wrap {
   display: flex;
-  justify-content: center;
   align-items: center;
+  justify-content: center;
 }
 
-.content-classification-button {
+.project-classification-button {
   width: 150px;
   height: 50px;
   border-radius: 50px;
@@ -32,12 +31,12 @@
   background: var(--main_color);
 }
 
-.content-classification-button:active {
+.project-classification-button:active {
   transition: 0.5s;
   background: none;
 }
 
-.content-classification-button-on {
+.project-classification-button-on {
   width: 150px;
   height: 50px;
   border-radius: 50px;
@@ -49,7 +48,7 @@
   background: var(--sub_color);
 }
 
-.content-classification-button-off {
+.project-classification-button-off {
   width: 150px;
   height: 50px;
   border-radius: 50px;
@@ -61,11 +60,11 @@
   background: var(--main_color);
 }
 
-.content-classification-button-text {
+.project-classification-button-text {
   font-size: 25px;
 }
 
-.content-container {
+.project-container {
   width: 85%;
   height: auto;
   flex-wrap: wrap;

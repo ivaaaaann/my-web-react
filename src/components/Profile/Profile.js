@@ -23,7 +23,7 @@ const MyLanguage = [
   },
   {
     id: 3,
-    Lang: "Java Script",
+    Lang: "JavaScript",
     img: JavascriptImg,
   },
   {
@@ -55,7 +55,7 @@ const Profile = () => {
 
   const hanldeIsPlace = () => {
     //console.log(`change: ${window.scrollY}`);
-    if (window.scrollY >= parseInt(969)) {
+    if (window.scrollY >= parseInt(569)) {
       setIsPlace(true);
     } else {
       setIsPlace(false);
@@ -71,7 +71,6 @@ const Profile = () => {
 
   return (
     <div className="profile-container" ref={profileId}>
-      {/* {isPlace ? ( */}
       <div id="profile-dataWrap" className={isPlace ? "ProfileOn" : ""}>
         <div className="profile-data-container">
           <div className="profile-title font-style">내정보</div>
@@ -96,7 +95,6 @@ const Profile = () => {
           </div>
         </div>
       </div>
-      {/* ) : null} */}
     </div>
   );
 };

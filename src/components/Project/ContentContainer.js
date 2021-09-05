@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "./ContentContainer.css";
 import Content from "./Content";
-import HyunieHompageImg from "../asset/img/hyunie-homepage.png";
-import PTPOProjectImg from "../asset/img/PTPO_project.png";
-import MovieAppImg from "../asset/img/Movie_app.png";
-import ToDoListImg from "../asset/img/Todolist.png";
-import HooksImg from "../asset/img/10KindHooksImg.png";
-import 맛있소고Img from "../asset/img/맛있소고.png";
-import TweeterCloneImg from "../asset/img/TweeterClone.png";
+import HyunieHompageImg from "../../asset/img/hyunie-homepage.png";
+import PTPOProjectImg from "../../asset/img/PTPO_project.png";
+import MovieAppImg from "../../asset/img/Movie_app.png";
+import ToDoListImg from "../../asset/img/Todolist.png";
+import HooksImg from "../../asset/img/10KindHooksImg.png";
+import 맛있소고Img from "../../asset/img/맛있소고.png";
+import TweeterCloneImg from "../../asset/img/TweeterClone.png";
 
 const tabs = [
   {
@@ -112,26 +112,26 @@ const ContentContainer = () => {
   };
 
   return (
-    <section id="contents">
-      <div className="content-title-container">
-        <div className="content-title font-style">프로젝트</div>
+    <div id="project-container">
+      <div className="project-title-container">
+        <div className="project-title font-style">프로젝트</div>
       </div>
-      <div className="content-button-wrap">
+      <div className="project-button-wrap">
         {tabs.map((section, index) => (
           <button
             className={
-              "content-classification-button-" +
+              "project-classification-button-" +
               (btnState === index ? "on" : "off")
             }
             onClick={() => onClickButton(index)}
           >
-            <div className="content-classification-button-text font-style">
+            <div className="project-classification-button-text font-style">
               {section.tab}
             </div>
           </button>
         ))}
       </div>
-      <div className="content-container">
+      <div className="project-container">
         {currentItem.content.map((content) => {
           return (
             <Content
@@ -145,7 +145,7 @@ const ContentContainer = () => {
           );
         })}
       </div>
-    </section>
+    </div>
   );
 };
 

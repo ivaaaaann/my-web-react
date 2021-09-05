@@ -11,7 +11,7 @@
 #profile-dataWrap {
   display: flex;
   flex-wrap: wrap;
-  row-gap: 20px;
+  column-gap: 20px;
   overflow: hidden;
 }
 
@@ -19,7 +19,7 @@
   transition: all 0.3s ease-out;
   opacity: 0;
   animation-name: fadeInUp;
-  animation-duration: 2s;
+  animation-duration: 1s;
   animation-fill-mode: both;
 }
 

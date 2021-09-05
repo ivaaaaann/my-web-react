@@ -1,7 +1,9 @@
 .hero-container {
   width: 100%;
   height: 100vh;
-  background-color: var(--main_color);
+  background-image: url(/src/asset/img/Hero.jfif);
+  background-repeat: no-repeat;
+  background-size: cover;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -11,23 +13,23 @@
 .hero-text-wrap {
   text-align: center;
   display: flex;
-  flex-direction: column; 
+  flex-direction: column;
+  z-index: 2;
 }
 
 @keyframes fadeInUp {
   from {
     transform: translate3d(0, 40px, 0);
   }
-  to{
-    transform: translate3d(0,0,0);
+  to {
+    transform: translate3d(0, 0, 0);
     opacity: 1;
   }
 }
 
-#hero-img{
-  width: 120px;
+#hero-img {
+  width: 100px;
   margin: 0px auto;
-  transition: all 0.3s ease-out;
   opacity: 0;
   animation-name: fadeInUp;
   animation-duration: 1s;
@@ -42,6 +44,7 @@
   animation-name: fadeInUp;
   animation-duration: 1s;
   animation-fill-mode: both;
+  color: white;
 }
 
 .hero-sub-text {
@@ -51,4 +54,5 @@
   animation-name: fadeInUp;
   animation-duration: 1s;
   animation-fill-mode: both;
+  color: white;
 }

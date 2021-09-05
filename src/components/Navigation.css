@@ -17,6 +17,11 @@
   transition: 0.5s;
 }
 
+.navOn {
+  transition: 1s;
+  background-color: var(--main_color);
+}
+
 .nav-logo-img {
   margin: 30px;
 }
