@@ -3,21 +3,29 @@
   height: auto;
 }
 
-.project-title-container {
-  align-items: center;
+.project-headerWrap {
   display: flex;
+  width: 70%;
+  margin: 0px auto;
 }
 .project-title {
   font-size: 40px;
-  margin: 20px;
   color: black;
-  margin: 10px auto;
+}
+#project-subTitle {
+  font-size: 20px;
+  margin: 0px;
+  margin-top: auto;
+  margin-bottom: 4px;
+  color: grey;
 }
 
 .project-button-wrap {
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-left: auto;
+  column-gap: 30px;
 }
 
 .project-classification-button {
@@ -37,39 +45,40 @@
 }
 
 .project-classification-button-on {
-  width: 150px;
-  height: 50px;
-  border-radius: 50px;
-  border: 1px solid var(--main-border-color);
+  color: var(--main_color);
+  border: 0px;
+  background: none;
+  font-size: 40px;
   cursor: pointer;
-  margin: 0px 10px;
-  outline: none;
-  transition: 0.5s;
-  background: var(--main_color);
+  border-bottom: 3px solid var(--main_color);
 }
 
 .project-classification-button-off {
-  width: 150px;
-  height: 50px;
-  border-radius: 50px;
-  border: 1px solid var(--main-border-color);
-  cursor: pointer;
-  margin: 0px 10px;
-  outline: none;
-  transition: 0.5s;
+  color: black;
+  border: 0px;
   background: none;
+  cursor: pointer;
 }
 
 .project-classification-button-text {
-  font-size: 25px;
+  font-size: 30px;
+}
+
+#project-middleLine {
+  width: 70%;
+  border: 0px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
 }
 
 .project-content-container {
-  width: 85%;
+  width: 70%;
   height: auto;
   flex-wrap: wrap;
   display: flex;
   margin: 0px auto;
   column-gap: 20px;
   row-gap: 20px;
+  align-items: center;
+  justify-content: center;
 }

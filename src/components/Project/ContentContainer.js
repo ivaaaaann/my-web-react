@@ -113,24 +113,28 @@ const ContentContainer = () => {
 
   return (
     <div id="project-container">
-      <div className="project-title-container">
+      <div className="project-headerWrap">
         <div className="project-title font-style">프로젝트</div>
+        <p id="project-subTitle" className="font-style">
+          여러 프로젝트를 기록했습니다
+        </p>
+        <div className="project-button-wrap">
+          {tabs.map((section, index) => (
+            <button
+              className={
+                "project-classification-button-" +
+                (btnState === index ? "on" : "off")
+              }
+              onClick={() => onClickButton(index)}
+            >
+              <div className="project-classification-button-text font-style">
+                {section.tab}
+              </div>
+            </button>
+          ))}
+        </div>
       </div>
-      <div className="project-button-wrap">
-        {tabs.map((section, index) => (
-          <button
-            className={
-              "project-classification-button-" +
-              (btnState === index ? "on" : "off")
-            }
-            onClick={() => onClickButton(index)}
-          >
-            <div className="project-classification-button-text font-style">
-              {section.tab}
-            </div>
-          </button>
-        ))}
-      </div>
+      <hr id="project-middleLine" />
       <div className="project-content-container">
         {currentItem.content.map((content) => {
           return (
