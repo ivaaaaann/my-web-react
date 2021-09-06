@@ -1,12 +1,20 @@
 .growthpath-container {
   height: auto;
+  min-height: 600px;
+  padding-top: 80px;
 }
 
 .growthpath-title {
   font-size: 40px;
   width: 100%;
   text-align: center;
-  margin: 10px auto;
+}
+
+#growthpath-subTitle {
+  font-size: 20px;
+  color: grey;
+  margin: 0px;
+  text-align: center;
 }
 
 .growthpath-item-wrap {
@@ -15,7 +23,7 @@
   row-gap: 40px;
   column-gap: 40px;
   width: 80%;
-  margin: 30px auto;
+  margin: 100px auto;
   align-items: center;
   justify-content: center;
 }

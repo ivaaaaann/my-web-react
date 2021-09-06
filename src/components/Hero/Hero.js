@@ -28,7 +28,7 @@ const Hero = () => {
           <img id="hero-img" src={Logo} />
           <div className="hero-main-text font-style">Welcome My Page</div>
           <div className="hero-sub-text font-style">
-            여러 프로젝트를 기록했습니다
+            깊게 알려고 노력하는 개발자
           </div>
         </div>
       ) : null}

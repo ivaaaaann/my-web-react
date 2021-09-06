@@ -1,0 +1,72 @@
+#linkGithub-container {
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+#linkGithub-backImg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-image: url(../../asset/img/LinkGithubImg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  z-index: 1;
+}
+
+#linkGithub-opacity {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  background-color: black;
+  z-index: 2;
+  opacity: 40%;
+}
+
+#linkGithub-textWrap {
+  position: absolute;
+  z-index: 4;
+  color: white;
+  left: 13%;
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+#linkGithub-mainText {
+  font-size: 50px;
+  font-weight: bold;
+  margin: 0px;
+}
+
+#linkGithub-subText {
+  font-size: 20px;
+  margin: 0px;
+  margin-top: 5px;
+}
+
+#linkGithub-btn {
+  width: 280px;
+  height: 60px;
+  border: 3px solid white;
+  position: absolute;
+  z-index: 4;
+  border-radius: 50px;
+  background: none;
+  color: white;
+  font-size: 25px;
+  right: 13%;
+  top: 50%;
+  transform: translate(0%, -50%);
+  cursor: pointer;
+}
+
+#linkGithub-btn:hover {
+  transition: all 0.3s ease-out;
+  background-color: var(--main_color);
+  border: 3px solid var(--main_color);
+}

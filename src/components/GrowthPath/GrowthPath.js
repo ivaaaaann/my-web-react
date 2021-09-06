@@ -48,6 +48,9 @@ const GrowthPath = () => {
   return (
     <div className="growthpath-container">
       <div className="growthpath-title font-style">로드맵</div>
+      <p id="growthpath-subTitle" className="font-style">
+        앞으로 헤쳐나가야 할 과제 입니다.
+      </p>
       <div className="growthpath-item-wrap">
         {GrowthPathData.map((data, idx) => (
           <GrowthPathItem
