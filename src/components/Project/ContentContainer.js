@@ -72,7 +72,7 @@ const tabs = [
       },
       {
         id: 2,
-        name: "OPSO 프로젝트",
+        name: "GLASS 프로젝트",
         year: "2021",
         complete: "진행중",
         explain:
@@ -131,7 +131,7 @@ const ContentContainer = () => {
           </button>
         ))}
       </div>
-      <div className="project-container">
+      <div className="project-content-container">
         {currentItem.content.map((content) => {
           return (
             <Content

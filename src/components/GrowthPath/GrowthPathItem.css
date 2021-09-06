@@ -1,11 +1,12 @@
 .growthpath-item-container {
-  width: 580px;
+  width: 300px;
   height: 300px;
   border: 1px solid var(--main-border-color);
   box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25),
     0 1px 3px -1px rgba(0, 0, 0, 0.3);
-  border-radius: 5px;
+  border-radius: 200px;
   position: relative;
+  border-radius: 200px;
 }
 
 .growthpath-item {
@@ -17,7 +18,7 @@
   display: flex;
   justify-content: center;
   position: absolute;
-  border-radius: 5px;
+  border-radius: 200px;
   z-index: 2;
 }
 .growthpath-item img {
@@ -27,7 +28,6 @@
 .growthpath-item-explain {
   width: 100%;
   height: 100%;
-  border-radius: 5px;
   background-color: var(--main-background-color);
   border: 1px solid white;
   left: 0px;
@@ -37,11 +37,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 200px;
 }
 
 .growthpath-item-explain-textWrap {
-  width: 380px;
-  height: 180px;
+  width: 205px;
+  height: 124px;
   margin: 0px;
   display: flex;
   align-items: center;
@@ -49,7 +50,7 @@
 }
 
 .growthpath-item-explain-text {
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300;
   margin: 0px;
 }
@@ -66,9 +67,71 @@
   z-index: 2;
   cursor: pointer;
   padding: 0px;
-  border-radius: 5px;
+  border-radius: 200px;
 }
 
-.isOn {
+.growthpath-number-box {
+  width: 72px;
+  height: 72px;
+  z-index: 3;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  border: 1px solid var(--main-border-color);
+  top: -30px;
+  border-radius: 50px;
+  background-color: var(--main_color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.growthpath-number {
+  font-size: 40px;
+}
+
+@keyframes growPathfadeInUp {
+  from {
+    transform: translate3d(0, 40px, 0);
+  }
+  to {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.isScroll1 {
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  animation-name: growPathfadeInUp;
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.isScroll2 {
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  animation-name: growPathfadeInUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+}
+
+.isScroll3 {
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  animation-name: growPathfadeInUp;
+  animation-duration: 2s;
+  animation-fill-mode: both;
+}
+
+.isScroll4 {
+  transition: all 0.3s ease-out;
+  opacity: 0;
+  animation-name: growPathfadeInUp;
+  animation-duration: 2.5s;
+  animation-fill-mode: both;
+}
+
+.isClick {
   z-index: 0;
 }

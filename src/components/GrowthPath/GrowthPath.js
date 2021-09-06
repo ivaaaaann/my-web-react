@@ -1,3 +1,4 @@
+import { useEffect, useState } from "react";
 import "./GrowthPath.css";
 import GrowthPathItem from "./GrowthPathItem";
 
@@ -27,12 +28,35 @@ const GrowthPathData = [
 ];
 
 const GrowthPath = () => {
+  const [isScroll, setIsScroll] = useState(false);
+
+  const handleScroll = () => {
+    if (window.scrollY >= parseInt(155)) {
+      setIsScroll(true);
+    } else {
+      setIsScroll(false);
+    }
+  };
+
+  useEffect(() => {
+    window.addEventListener("scroll", handleScroll);
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
     <div className="growthpath-container">
       <div className="growthpath-title font-style">로드맵</div>
       <div className="growthpath-item-wrap">
-        {GrowthPathData.map((data) => (
-          <GrowthPathItem img={data.img} explain={data.explain} key={data.id} />
+        {GrowthPathData.map((data, idx) => (
+          <GrowthPathItem
+            img={data.img}
+            explain={data.explain}
+            key={data.id}
+            index={idx + 1}
+            isScroll={isScroll}
+          />
         ))}
       </div>
     </div>

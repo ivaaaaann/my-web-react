@@ -1,37 +1,27 @@
 .content {
-  width: 450px;
-  height: 200px;
-  margin: 20px auto;
+  width: 380px;
+  height: 450px;
   border-radius: 5px;
   box-shadow: 0 2px 5px -1px rgba(50, 50, 93, 0.25),
     0 1px 3px -1px rgba(0, 0, 0, 0.3);
-  border: 1px solid var(--main_color);
+  border: 1px solid var(--main-border-color);
   display: flex;
+  flex-direction: column;
   background-color: white;
 }
 
-.content:hover {
-  background-color: var(--sub_color);
-  color: white;
-  transition: 1s;
-}
-
 .content-img {
-  width: 40%;
-  height: 100%;
-  justify-content: center;
-  align-items: center;
-  display: flex;
+  width: 100%;
 }
 
 .content-img img {
-  width: 80%;
-  height: 80%;
+  width: 100%;
+  height: 250px;
   border-radius: 5px;
 }
 
 .content-data {
-  width: 60%;
+  width: 100%;
   height: 100%;
 }
 
