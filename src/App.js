@@ -7,7 +7,7 @@ import HeroPage from "./page/Hero/HeroPage";
 import ProfilePage from "./page/Profile/ProfilePage";
 import GrowPathPage from "./page/GrowthPath/GrowPathPage";
 import ProjectPage from "./page/Project/ProjectPage";
-import LinkGithub from "./components/LinkGithub/LinkGithub";
+import LinkGithubPage from "./page/LinkGithub/LinkGithubPage";
 
 const App = () => {
   return (
@@ -18,7 +18,7 @@ const App = () => {
           <LoadingTitle />
           <HeroPage />
           <GrowPathPage />
-          <LinkGithub />
+          <LinkGithubPage />
           <ProfilePage />
           <ProjectPage />
           <Footer />
