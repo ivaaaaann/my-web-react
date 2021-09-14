@@ -42,3 +42,12 @@
   margin-top: 5px;
   margin-left: 5px;
 }
+
+.content-detailContent-btn {
+  cursor: pointer;
+  position: absolute;
+  width: 300px;
+  height: 400px;
+  background: none;
+  border: 0px;
+}
