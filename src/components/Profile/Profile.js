@@ -70,8 +70,11 @@ const Profile = () => {
   }, []);
 
   return (
-    <div className="profile-container" ref={profileId}>
-      <div id="profile-dataWrap" className={isPlace ? "ProfileOn" : ""}>
+    <div
+      className={`profile-container ${isPlace ? "ProfileOn" : ""}`}
+      ref={profileId}
+    >
+      <div id="profile-dataWrap">
         <div className="profile-data-container">
           <div className="profile-title font-style">내정보</div>
           <div className="profile-privacy-data-wrap">

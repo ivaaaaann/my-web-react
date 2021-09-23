@@ -1,11 +1,15 @@
 .profile-container {
   width: 100%;
-  min-height: 100vh;
+  min-height: 620px;
   height: auto;
-  background-color: white;
+  background-color: #f1f2f2;
+  /* background-color: white; */
+  border: 1px solid var(--main-border-color);
+  box-sizing: border-box;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin: 82px 0px;
 }
 
 #profile-dataWrap {
